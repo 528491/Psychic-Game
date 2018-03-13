@@ -78,7 +78,7 @@ initializeGameplay();
 document.onkeyup = function(event){
     var userGuess = event.key;
     yourGuessesSoFar.push(userGuess);
-    refreshDisplay();
+    
 
     if (userGuess == psychicGuess) {
         correctGuess();
@@ -90,4 +90,5 @@ document.onkeyup = function(event){
             newGame('l');
         }
     }
+    refreshDisplay();
 }
